@@ -1,0 +1,12 @@
+Teste de mesa
+
+var
+prompt = API
+movimento = "sim"
+barulho = "sim"
+luzes = "sim"
+ligado = true
+
+Responda algumas perguntas com "sim" ou "não":
+Concluimos
+.
