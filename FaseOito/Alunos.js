@@ -99,5 +99,38 @@ else {
 }
 
 //O total de presentes
-for (var i = 0; i < qtde; i++) {
+var total = 0;
+
+for (var i = 0; i < presenca.length; i++) {
+  //critério
+  //pleonasmo, pois o valor em "presenca[i]" já é true ou false
+  var presente = (presenca[i] == true);
+
+  //if (presenca[i]) {
+  if (presente) {
+    total = total + 1;
+  }
 }
+
+console.log("O total de presentes é " + total);
+
+//O nome dos ausentes
+//ahey
+
+var ausentes = [];
+
+for (let i = 0; i < alunos.length; i++) {
+  //saber se está ausente, é o mesmo que negar a presença
+  const ausente = ! presenca[i];
+  //const ausente = presenca[i] == false;
+
+  //critério de busca
+  if (ausente) {
+    nome = alunos[i];
+    //ausentes.push(nome);
+    ausentes[i] = nome;
+  }
+}
+
+console.log("Os nomes dos ausentes abaixo:");
+console.log(ausentes);

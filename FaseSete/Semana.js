@@ -9,12 +9,15 @@ semana[6] = "Sábado";
 const numero = 5;
 numero = 9;
 
-const vetor = [];
+const armario = [];
 //vetor = "abc";
-vetor[0] = "não é uma atribuição no identificador vetor, e sim";
-vetor[1] = "uma posição dentro do vetor";
+armario[0] = "não é uma atribuição no identificador vetor, e sim";
+armario[1] = "uma posição dentro do vetor";
 
-vetor[] = "nada";
+armario[1] = "nada";
+
+armario = "guarda roupa inteiro";
+armario[3] = "gaveta 3 do guarda roupa";
 
 console.log(semana[4]);
 
